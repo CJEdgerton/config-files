@@ -116,6 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# enable vi keybindings in prompt
+set -o vi
+
 # xcalib aliases
 alias invert='xcalib -i -a'
-
