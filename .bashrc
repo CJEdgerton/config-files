@@ -119,5 +119,12 @@ fi
 # enable vi keybindings in prompt
 set -o vi
 
-# xcalib aliases
+
+# aliases
+
+# invert screen
 alias invert='xcalib -i -a'
+
+# lock screen
+alias lock='i3lock -uc 555555'
+
