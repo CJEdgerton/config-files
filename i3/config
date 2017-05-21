@@ -163,10 +163,10 @@ bindsym $mod+r mode "resize"
 
 # Colors
 
-set $bg-color			#2f343f
-set $inactive-bg-color		#2f343f
-set $text-color			#f3f4f5
-set $inactive-text-color	#676e7d
+set $bg-color			#d1d1d1
+set $inactive-bg-color		#d1d1d1
+set $text-color			#161616
+set $inactive-text-color	#7c7c7c
 set $urgent-bg-color		#e53935
 set $urgent-text-color		#e53935
 
@@ -177,6 +177,7 @@ client.unfocused	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	#00f
 client.focused_inactive	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	#00ff00
 client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color		#00ff00
 
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -184,6 +185,7 @@ bar {
         status_command i3status -c ~/.config/i3/i3status.conf
 	colors {
 		background 		$bg-color
+		statusline		$text-color
 		separator 		#757575
 		#			#border			#background		#text
 		focused_workspace	$bg-color		$bg-color		$text-color
@@ -195,12 +197,16 @@ bar {
 }
 
 # Execute i3 lock if no activity for 10 minutes
-exec --no-startup-id xautolock -time 10 -locker 'i3lock -uc 555555'
-bindsym $mod+shift+x exec i3lock -uc 555555
+exec --no-startup-id xautolock -time 10 -locker 'i3lock -c 555555'
+bindsym $mod+shift+x exec i3lock -c 555555
 
 # Enable natural scroll
 exec --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113
 
 # Set wallpaper on start
-exec_always feh --bg-scale /home/cj/Pictures/Wallpapers/wallpapers-pic-7.jpg
+exec_always feh --bg-scale /home/cj/Pictures/Wallpapers/gray-1.jpg
+
+# External Monitor Connectivity
+# bindsym $mod+Shift+s exec --no-startup-id /home/cj/bin/monitor.sh
+bindsym $mod+Shift+s exec sh /home/cj/bin/monitor.sh
 
