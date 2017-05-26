@@ -104,6 +104,7 @@ alias pamm="php artisan make:migration"
 alias gs="git status"
 alias gaa="git add --all"
 alias gc="git commit"
+alias gcm="git commit -m"
 
 alias pu="phpunit"
 alias puf="phpunit --filter"
