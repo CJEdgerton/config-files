@@ -93,6 +93,9 @@ export PATH=$PATH:/usr/local/bin/php
 bindkey -v
 export KEYTIMEOUT=1
 
+# Shell aliases
+alias list="ls -la"
+
 # CLI aliases
 alias pa="php artisan"
 alias pat="php artisan tinker"
