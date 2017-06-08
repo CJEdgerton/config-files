@@ -93,11 +93,16 @@ export PATH=$PATH:/usr/local/bin/php
 bindkey -v
 export KEYTIMEOUT=1
 
+# Shell aliases
+alias list="ls -la"
+
 # CLI aliases
 alias pa="php artisan"
 alias pat="php artisan tinker"
+alias pam="php artisan migrate"
 alias pamr="php artisan migrate:refresh"
 alias pamrs="php artisan migrate:refresh --seed"
+alias pamm="php artisan make:migration"
 
 alias gs="git status"
 alias gaa="git add --all"

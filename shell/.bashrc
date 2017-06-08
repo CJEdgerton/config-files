@@ -120,11 +120,28 @@ fi
 set -o vi
 
 
-# aliases
+# Aliases
 
-# invert screen
+# Shell aliases
+alias list="ls -la"
+
+# CLI aliases
+alias pa="php artisan"
+alias pat="php artisan tinker"
+alias pam="php artisan migrate"
+alias pamr="php artisan migrate:refresh"
+alias pamrs="php artisan migrate:refresh --seed"
+alias pamm="php artisan make:migration"
+
+alias gs="git status"
+alias gaa="git add --all"
+alias gc="git commit"
+alias gcm="git commit -m"
+
+alias pu="phpunit"
+alias puf="phpunit --filter"
+alias gpo="git push origin"
+
 alias invert='xcalib -i -a'
-
-# lock screen
 alias lock='i3lock -uc 555555'
 
