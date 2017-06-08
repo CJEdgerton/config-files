@@ -102,6 +102,7 @@ alias pamrs="php artisan migrate:refresh --seed"
 alias gs="git status"
 alias gaa="git add --all"
 alias gc="git commit"
+alias gcm="git commit -m"
 alias gpo="git push origin"
 
 alias pu="phpunit"
