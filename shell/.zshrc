@@ -112,3 +112,7 @@ alias gcm="git commit -m"
 alias pu="phpunit"
 alias puf="phpunit --filter"
 alias gpo="git push origin"
+
+alias invert='xcalib -i -a'
+alias lock='i3lock -uc 555555'
+
