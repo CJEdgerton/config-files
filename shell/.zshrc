@@ -108,11 +108,10 @@ alias gs="git status"
 alias gaa="git add --all"
 alias gc="git commit"
 alias gcm="git commit -m"
+alias gpo="git push origin"
 
 alias pu="phpunit"
 alias puf="phpunit --filter"
-alias gpo="git push origin"
 
 alias invert='xcalib -i -a'
 alias lock='i3lock -uc 555555'
-
