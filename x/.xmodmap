@@ -1,5 +1,6 @@
 keycode   8 =
-keycode   9 = Caps_Lock NoSymbol Caps_Lock
+! Esc -> F1
+keycode   9 = F1 F1 F1 F1 F1 F1 XF86Switch_VT_1
 keycode  10 = 1 exclam 1 exclam
 keycode  11 = 2 at 2 at
 keycode  12 = 3 numbersign 3 numbersign
@@ -54,19 +55,47 @@ keycode  60 = period greater period greater
 keycode  61 = slash question slash question
 keycode  62 = Shift_R NoSymbol Shift_R
 keycode  63 = KP_Multiply KP_Multiply KP_Multiply KP_Multiply KP_Multiply KP_Multiply XF86ClearGrab
+
+
+! *** Change left Alt key to 'Super'/'Windows key ***
+
+! ** default **
 keycode  64 = Alt_L Meta_L Alt_L Meta_L
+
+! ** new **
+! keycode 64 = NoSymbol Super_L NoSymbol Super_L
+
+
+! *** Change left Alt key to 'Super'/'Windows key ***
+
 keycode  65 = space NoSymbol space
 keycode  66 = Escape NoSymbol Escape
-keycode  67 = F1 F1 F1 F1 F1 F1 XF86Switch_VT_1
-keycode  68 = F2 F2 F2 F2 F2 F2 XF86Switch_VT_2
-keycode  69 = F3 F3 F3 F3 F3 F3 XF86Switch_VT_3
-keycode  70 = F4 F4 F4 F4 F4 F4 XF86Switch_VT_4
-keycode  71 = F5 F5 F5 F5 F5 F5 XF86Switch_VT_5
-keycode  72 = F6 F6 F6 F6 F6 F6 XF86Switch_VT_6
-keycode  73 = F7 F7 F7 F7 F7 F7 XF86Switch_VT_7
-keycode  74 = F8 F8 F8 F8 F8 F8 XF86Switch_VT_8
-keycode  75 = F9 F9 F9 F9 F9 F9 XF86Switch_VT_9
-keycode  76 = F10 F10 F10 F10 F10 F10 XF86Switch_VT_10
+
+! Function Key Remaps
+! keycode  67 = F1 F1 F1 F1 F1 F1 XF86Switch_VT_1
+! f1 -> f2
+keycode  67 = F2 F2 F2 F2 F2 F2 XF86Switch_VT_2
+! f2 -> f3
+keycode  68 = F3 F3 F3 F3 F3 F3 XF86Switch_VT_3
+! f3 -> f4
+keycode  69 = F4 F4 F4 F4 F4 F4 XF86Switch_VT_4
+! f4 -> f5
+keycode  70 = F5 F5 F5 F5 F5 F5 XF86Switch_VT_5
+! f5 -> f6
+keycode  71 = F6 F6 F6 F6 F6 F6 XF86Switch_VT_6
+! f6 -> f7
+keycode  72 = F7 F7 F7 F7 F7 F7 XF86Switch_VT_7
+! f7 -> f8
+keycode  73 = F8 F8 F8 F8 F8 F8 XF86Switch_VT_8
+! f8 -> f9
+keycode  74 = F9 F9 F9 F9 F9 F9 XF86Switch_VT_9
+! f9 -> f10
+keycode  75 = F10 F10 F10 F10 F10 F10 XF86Switch_VT_10
+! f10 -> f11
+keycode  76 = F11 F11 F11 F11 F11 F11 XF86Switch_VT_11
+! power -> f12
+keycode  124 = F12 F12 F12 F12 F12 F12 XF86Switch_VT_12
+
 keycode  77 = Num_Lock NoSymbol Num_Lock
 keycode  78 = Scroll_Lock NoSymbol Scroll_Lock
 keycode  79 = KP_Home KP_7 KP_Home KP_7
@@ -85,8 +114,9 @@ keycode  91 = KP_Delete KP_Decimal KP_Delete KP_Decimal
 keycode  92 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
 keycode  93 =
 keycode  94 = less greater less greater bar brokenbar bar
-keycode  95 = F11 F11 F11 F11 F11 F11 XF86Switch_VT_11
-keycode  96 = F12 F12 F12 F12 F12 F12 XF86Switch_VT_12
+
+! keycode  95 = F11 F11 F11 F11 F11 F11 XF86Switch_VT_11
+! keycode  96 = F12 F12 F12 F12 F12 F12 XF86Switch_VT_12
 keycode  97 =
 keycode  98 = Katakana NoSymbol Katakana
 keycode  99 = Hiragana NoSymbol Hiragana
@@ -98,7 +128,17 @@ keycode 104 = KP_Enter NoSymbol KP_Enter
 keycode 105 = Control_R NoSymbol Control_R
 keycode 106 = KP_Divide KP_Divide KP_Divide KP_Divide KP_Divide KP_Divide XF86Ungrab
 keycode 107 = Print Sys_Req Print Sys_Req
+
+! *** Change right Alt key to 'Super'/'Windows key ***
+
+! ** default **
 keycode 108 = Alt_R Meta_R Alt_R Meta_R
+
+! ** new **
+! keycode 108 = Super_R NoSymbol Super_R
+
+! *** Change right Alt key to 'Super'/'Windows key ***
+
 keycode 109 = Linefeed NoSymbol Linefeed
 keycode 110 = Home NoSymbol Home
 keycode 111 = Up NoSymbol Up
@@ -114,7 +154,7 @@ keycode 120 =
 keycode 121 = XF86AudioMute NoSymbol XF86AudioMute
 keycode 122 = XF86AudioLowerVolume NoSymbol XF86AudioLowerVolume
 keycode 123 = XF86AudioRaiseVolume NoSymbol XF86AudioRaiseVolume
-keycode 124 = XF86PowerOff NoSymbol XF86PowerOff
+! keycode 124 = XF86PowerOff NoSymbol XF86PowerOff
 keycode 125 = KP_Equal NoSymbol KP_Equal
 keycode 126 = plusminus NoSymbol plusminus
 keycode 127 = Pause Break Pause Break
@@ -123,7 +163,17 @@ keycode 129 = KP_Decimal KP_Decimal KP_Decimal KP_Decimal
 keycode 130 = Hangul NoSymbol Hangul
 keycode 131 = Hangul_Hanja NoSymbol Hangul_Hanja
 keycode 132 =
+
+! *** Move escape to Caps Lock ( search on chromebook ) ***
+
+! ** default **
+! keycode 133 = Caps_Lock NoSymbol Caps_Lock
+
+! ** new **
 keycode 133 = Escape NoSymbol Escape
+
+! *** Move escape to Caps Lock ( search on chromebook ) ***
+
 keycode 134 = Super_R NoSymbol Super_R
 keycode 135 = Menu NoSymbol Menu
 keycode 136 = Cancel NoSymbol Cancel
