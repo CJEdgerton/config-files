@@ -1,7 +1,7 @@
 ! Remap keys on Toshiba CB2 keyboard
 ! This is a working version with the following
 ! 1) Top row keys remapped to f1-f12
-! 2) Right alt key remapped to Super R
+! 2) Option to remap alt key (left or right) to super (left or right)
 ! 3) Search/Capslock key remapped to Escape
 
 ! Set top row keys to f1-f12
