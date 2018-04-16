@@ -1,0 +1,21 @@
+! Remap keys on Kinesis Advantage 2
+! This is a working version with the following
+! 1) Option to remap alt key (left or right) to super (left or right)
+! 2) Search/Capslock key remapped to Escape at keyboard level (to avoid caps lock light)
+
+! 1) Remap an Alt key to a Super key
+! 2) Need to do the remap first then empty and reset the Mod keys
+! This order is important because if you remap after #2 then 
+! the key will be moved to an unexpected mod key
+
+! keysym Alt_R = Super_R
+keysym Alt_L = Super_L
+
+clear Mod1
+clear Mod4
+
+add Mod1 = Alt_L
+add Mod1 = Alt_R
+
+add Mod4 = Super_L
+add Mod4 = Super_R

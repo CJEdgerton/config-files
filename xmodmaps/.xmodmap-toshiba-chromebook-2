@@ -1,0 +1,41 @@
+! Remap keys on Toshiba CB2 keyboard
+! This is a working version with the following
+! 1) Top row keys remapped to f1-f12
+! 2) Option to remap alt key (left or right) to super (left or right)
+! 3) Search/Capslock key remapped to Escape
+
+! Set top row keys to f1-f12
+keysym Escape = F1
+keysym F1 = F2
+keysym F2 = F3
+keysym F3 = F4
+keysym F4 = F5
+keysym F5 = F6
+keysym F6 = F7
+keysym F7 = F8
+keysym F8 = F9
+keysym F9 = F10
+keysym F10 = F11
+! Remember to set 'HandlePowerKey=ignore' in /etc/systemd/logind.conf
+keysym XF86PowerOff = F12
+
+
+! 1) Remap an Alt key to a Super key
+! 2) Need to do the remap first then empty and reset the Mod keys
+! This order is important because if you remap after #2 then 
+! the key will be moved to an unexpected mod key
+
+! keysym Alt_R = Super_R
+keysym Alt_L = Super_L
+
+clear Mod1
+clear Mod4
+
+add Mod1 = Alt_L
+add Mod1 = Alt_R
+
+add Mod4 = Super_L
+add Mod4 = Super_R
+
+! Remap CapsLock (Super_L on TCB2) to Escape
+keysym Super_L = Escape
