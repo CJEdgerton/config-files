@@ -1,0 +1,45 @@
+meta:
+  description: 'Light theme'
+window_colors:
+  focused:
+    border:           '#d1d1d1'
+    background:       '#d1d1d1'
+    text:             '#161616'
+    indicator:        '#00ff00'
+  focused_inactive:
+    border:           '#d1d1d1'
+    background:       '#d1d1d1'
+    text:             '#7c7c7c'
+    indicator:        '#00ff00'
+  unfocused:
+    border:           '#d1d1d1'
+    background:       '#d1d1d1'
+    text:             '#7c7c7c'
+    indicator:        '#00ff00'
+  urgent:
+    border:           '#e53935'
+    background:       '#e53935'
+    text:             '#161616'
+    indicator:        '#00ff00'
+bar_colors:
+  separator:          '#757575'
+  background:         '#d1d1d1'
+  statusline:         '#161616'
+  focused_workspace:
+    border:           '#d1d1d1'
+    background:       '#d1d1d1'
+    text:             '#161616'
+  active_workspace:
+    border:           '#d1d1d1'
+    background:       '#d1d1d1'
+    text:             '#161616'
+  inactive_workspace:
+    border:           '#d1d1d1'
+    background:       '#d1d1d1'
+    text:             '#7c7c7c'
+  urgent_workspace:
+    border:           '#d1d1d1'
+    background:       '#d1d1d1'
+    text:             '#e53935'
+
+

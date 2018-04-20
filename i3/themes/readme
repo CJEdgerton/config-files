@@ -1,0 +1,6 @@
+This is a theme format that is used by the 'i3-style' utility.
+
+The utility can be installed via npm:
+npm install -g i3-style
+
+View the man page on usage once installed.
